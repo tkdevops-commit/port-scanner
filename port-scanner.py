@@ -2,7 +2,7 @@ import socket
 from datetime import datetime
 
 def scan_port(ip, port):
-    scanner = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    scanner = socket.socket(socket.AF_INET, socket.SOCK_STREAM
     socket.setdefaulttimeout(1)
     result = scanner.connect_ex((ip, port))
     scanner.close()
